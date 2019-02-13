@@ -39,7 +39,7 @@ user chooses any short code, example: cp*
 ## Output
 the user is directed to do what the short code executes, example:cp -create password
 
-
+## Other behaviors(short codes):
 * cc : create a new user
 * dc : display users
 * fc : find a use
@@ -47,7 +47,7 @@ the user is directed to do what the short code executes, example:cp -create pass
 ## Bugs
 Since there is no database to support the app, once you exit or log out of a session you loose all the credentials and created user. You have to create a new user for every session. You can still use the default login but if you exit the app, you will still loose all the credentials you created.
 
-## Technologies Used
+
 Python
 Git Hub
 Terminal
