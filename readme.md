@@ -15,10 +15,10 @@ For now the project is only viewable in the terminal!
 ## App Specifications
 ## (SPECs)The following is what my program should handle:
 
-
+## Example Intput :
 user enters first and last name
 
-## Output:
+
 user enters app but has to login
 
 ## Example Input :
