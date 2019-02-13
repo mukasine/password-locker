@@ -39,7 +39,7 @@ the user is directed to do what the short code executes, example:cp -create pass
 
 ## Other behaviors(short codes):
 * cc : create a new user
-* d : display users
+* dc : display users
 * fc : find a use
 * ex : exit user list
 ## Bugs
