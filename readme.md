@@ -12,9 +12,10 @@ From the terminal navigate to the cloned project folder.
 Run python3.6 run.py code in the terminal to launch.
 For now the project is only viewable in the terminal!
 
-## 
+## App Specifications
 ## (SPECs)The following is what my program should handle:
-## Example Intput :
+
+
 user enters first and last name
 
 ## Output:
