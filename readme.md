@@ -18,7 +18,7 @@ For now the project is only viewable in the terminal!
 ## Example Intput :
 user enters first and last name
 
-
+## Output:git add
 user enters app but has to login
 
 ## Example Input :
@@ -39,7 +39,7 @@ user chooses any short code, example: cp*
 ## Output
 the user is directed to do what the short code executes, example:cp -create password
 
-## Other behaviors(short codes):
+
 * cc : create a new user
 * dc : display users
 * fc : find a use
