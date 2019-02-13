@@ -47,11 +47,12 @@ the user is directed to do what the short code executes, example:cp -create pass
 ## Bugs
 Since there is no database to support the app, once you exit or log out of a session you loose all the credentials and created user. You have to create a new user for every session. You can still use the default login but if you exit the app, you will still loose all the credentials you created.
 
-
+## Technologies Used
 Python
 Git Hub
 Terminal
-## Support and contact details
+
+
 If needed contact me on: E-mail:mclaremukasine@gmail.com Phone:0725711004-0782586013.
 
 ## License
