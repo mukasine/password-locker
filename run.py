@@ -1,4 +1,7 @@
 #!/usr/bin/env python3.6
+from user import User
+import string
+import random
 def create_user(fname,lname,phone,email):
     '''
     Function to create a new user
@@ -32,6 +35,15 @@ def display_users():
     Function that returns all the saved users
     '''
     return User.display_users()
+def del_user(users):
+    '''
+    Function to delete a credential
+    '''
+    users.delete_user()
+
+def pw_gen(size = 8, chars=string.ascii_letters + string.digits + string.punctuation):
+	return ''.join(random.choice(chars) for _ in range(size))
+
 
 def main():
     print("Hello Welcome to your user list. What is your name?")
@@ -40,7 +52,7 @@ def main():
     print(f"Hello {user_name}. what would you like to do?")
     print('\n')
     while True:
-                    print("Use these short codes : cc - create a new user, dc - display users, fc -find a user, ex -exit the user list ")
+                    print("Use these short codes : cc - create a new user, dc - display users, fc -find a user, ex -exit the user list , dd- delete user ")
 
                     short_code = input().lower()
 
@@ -60,10 +72,23 @@ def main():
                             print("Email address ...")
                             e_address = input()
 
+                            print("Password ...")
+                            print("pg - generate password , ep- Enter password")
+                            short_code1=input().lower()
+                            if short_code1=='pg':
+                                password=pw_gen()
+                            elif short_code1=='ep':
+                                print("Enter password")
+                                password=input()
+
+                            else:
+                                print("Please use provided short codes")
+
 
                             save_users(create_user(f_name,l_name,p_number,e_address)) # create and save new user.
                             print ('\n')
                             print(f"New User {f_name} {l_name} created")
+                        #     print(f"Your new password is {password}")
                             print ('\n')
 
                     elif short_code == 'dc':
@@ -95,6 +120,29 @@ def main():
                                     print(f"Email address.......{search_user.email}")
                             else:
                                     print("That user does not exist")
+
+                    elif short_code == 'dd':
+                        
+                            print("Search for number to delete")
+
+                            search_name = input()
+
+                            if check_existing_users(search_name):
+                                search_credential = find_user(search_name)
+                                # print(f"ACCOUNT NAME: {search_credential.acc_name} \n PASSWORD: {search_credential.acc_password}")
+                                # print("Delete? y(for yes)/n(for no)")
+                                # proceed = input().lower()
+                                # if proceed == 'y':
+                                del_user(search_credential)
+                                print("User deleted")
+                                #     print("Account deleted")
+                                #     break
+                                # elif proceed == 'n':
+                                #     continue
+
+                            else:
+                                print("Contact Does not exist")
+                                break              
 
                     elif short_code == "ex":
                             print("Bye .......")

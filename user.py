@@ -66,3 +66,10 @@ class User:
         method that returns the user list
         '''
         return cls.user_list
+
+    def delete_user(self):
+        '''
+        delete_contact method deletes a saved credential from the list_of_creds
+        '''
+
+        User.user_list.remove(self)
