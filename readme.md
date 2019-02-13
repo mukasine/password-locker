@@ -4,7 +4,7 @@ By MUKASINE Marie Claire
 ## Description
 The password locker is an app that help the user generate and store passwords that he/she uses regulary. The user can either create password on his own or generate it. The user can also delete a password of his choice all display them but first he/she has to log in to the app.
 
-
+## Installation Requirements
 
 Clone this repository to your local computer.
 Ensure you have python3.6 installed in your computer.
@@ -12,7 +12,7 @@ From the terminal navigate to the cloned project folder.
 Run python3.6 run.py code in the terminal to launch.
 For now the project is only viewable in the terminal!
 
-## App Specifications
+## 
 ## (SPECs)The following is what my program should handle:
 ## Example Intput :
 user enters first and last name
