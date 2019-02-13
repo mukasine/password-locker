@@ -1,10 +1,11 @@
 ## Password_Locker
 The password Locker is an application designed to help the user generate and store passwords that he/she uses regulary, February 10th 2019
 By MUKASINE Marie Claire
-
+## Description
 The password locker is an app that help the user generate and store passwords that he/she uses regulary. The user can either create password on his own or generate it. The user can also delete a password of his choice all display them but first he/she has to log in to the app.
 
-## Installation Requirements
+
+
 Clone this repository to your local computer.
 Ensure you have python3.6 installed in your computer.
 From the terminal navigate to the cloned project folder.
